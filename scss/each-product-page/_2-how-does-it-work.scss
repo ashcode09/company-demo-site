@@ -1,0 +1,30 @@
+.how-does-it-work {
+	text-align: center;
+	background-color: white;
+	@extend .pdg-top-btm-each-module;
+
+	.steps {
+		margin-top: 50px;
+		color: $color-on-lightbg-1;
+
+		img {
+			margin: 0 auto;
+			margin-bottom: 40px;
+			max-width: 100%;
+			height: auto;
+
+			@media (max-width: $x-small) {
+				width: 85%;
+				max-width: 350px;
+			}
+		}
+
+		.heading {
+			margin-bottom: 15px;
+		}
+
+		.content {
+			margin-bottom: 30px;
+		}
+	}
+}

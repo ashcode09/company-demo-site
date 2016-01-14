@@ -1,0 +1,152 @@
+body {
+
+	/* Default Regular Copy Size */
+
+	font-family: $page-font;
+	font-size: $reg-body-copy-sm-screen;
+	font-weight: $roboto-light-weight;
+
+	@media (min-width: $x-small) {
+		font-size: $reg-body-copy;
+	}
+
+	a {
+		p {
+			margin: 0;
+		}
+	}
+
+	/* Headings */
+
+	h1 {
+		font-size: $h1-size-sm-screen;
+		font-weight: $roboto-light-weight;
+
+		@media (min-width: $x-small) {
+			font-size: $h1-size;
+		}
+	}
+
+	h2 {
+		text-align: center;
+		font-size: $h2-size-sm-screen;
+		font-weight: $roboto-light-weight;
+		margin-top: 0px;
+		display: inline-block;
+
+		@media (min-width: $x-small) {
+			font-size: $h2-size;
+		}
+	}
+
+	h3 {
+		font-size: $h3-size-sm-screen;
+
+		@media (min-width: $x-small) {
+			font-size: $h3-size;
+		}
+	}
+
+	h4,
+	.deal {
+		margin-top: 0px;
+		font-size: $h4-size-sm-screen;
+
+		@media (min-width: $x-small) {
+			font-size: $h4-size;
+		}
+	}
+
+	/* Small Body Copy */
+
+	.small-body-copy {
+		font-size: $small-copy-size;
+		font-weight: $roboto-light-weight;
+	}
+
+	.strike-through {
+		text-decoration: line-through;
+	}
+
+	/* Links */
+
+	.all-links {
+		font-weight: $roboto-bold-weight;
+		font-size: $reg-body-copy;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.links-on-darkbg {
+		color: $link-color-on-darkbg;
+		@extend .all-links;
+	}
+
+	.links-on-darkbg:hover,
+	.links-on-darkbg:active {
+		color: $hover-color-on-darkbg;
+	}
+
+	.links-on-lightbg {
+		color: $link-color-on-lightbg;
+		@extend .all-links;
+		margin-bottom: -10px;
+	}
+
+	.links-on-lightbg:hover,
+	.links-on-lightbg:active {
+		color: $hover-color-on-lightbg;
+	}
+
+	/* Buttons */
+
+	.all-btns {
+		padding: 0px $button-height;
+		border-radius: $button-height;
+		font-size: $reg-body-copy;
+		font-weight: $roboto-bold-weight;
+    line-height: 35px;
+		color: $btn-color-lightbg;
+
+		@media (max-width: $x-small) {
+			width: 100%;
+		}
+	}
+
+	.btn-on-lightbg {
+		background-color: $btn-bg-on-lightbg;
+		@extend .all-btns;
+	}
+
+	.btn-on-lightbg:hover,
+	.btn-on-lightbg:active {
+		background-color: $btn-hover-bg-lightbg;
+		color: $btn-color-lightbg;
+	}
+
+	.btn-on-darkbg {
+		background-color: $btn-bg-on-darkbg;
+		border: 3px solid $btn-color-darkbg;
+		@extend .all-btns;
+	}
+
+	.btn-on-darkbg:hover,
+	.btn-on-darkbg:active {
+		color: $btn-hover-col-dark-bg;
+		border-color: $btn-hover-col-dark-bg;
+	}
+
+	/* Underlining the Heading */
+
+	.heading-underline {
+		margin: 0 auto;
+		height: 4px;
+		background-color: $danube;
+		width: $hdg-underline-width;
+		margin-top: 25px;
+		margin-bottom: 40px;
+	}
+}
+
+
+

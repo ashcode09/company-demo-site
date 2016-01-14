@@ -1,0 +1,42 @@
+.footer {
+	padding-bottom: 10px;
+	background-color: $mineshaft;
+	color: $color-on-darkbg;
+	text-align: center;
+	width: 100%;
+
+	.row {
+		margin-top: 25px;
+
+		a {
+			font-size: $small-copy-size;
+			font-weight: $roboto-light-weight;
+		}
+
+		.copyright {
+			text-align: center;
+		}
+
+		.t-and-cs {
+			text-decoration: none;
+			@media (min-width: $x-small) {
+				margin-right: 35px;
+			}
+		}
+
+		.privacy-policy {
+			text-decoration: none;
+			@media (min-width: $x-small) {
+				margin-left: 35px;
+			}
+		}
+	}
+
+	.content {
+		text-align: center;
+
+		.content-paragraph {
+			margin: 0;
+		}
+	}
+}

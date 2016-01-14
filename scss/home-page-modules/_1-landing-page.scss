@@ -1,0 +1,63 @@
+.landing-page {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	color: $color-on-darkbg;
+	text-align: center;
+	padding-top: 100px;
+	min-height: 550px;
+	@extend .landing-page-image;
+
+	.container {
+		position: relative;
+	}
+
+	.main-heading {
+		margin-bottom: 54px;
+
+		h1 {
+			margin-bottom: 24px;
+		}
+	}
+
+	p {
+		margin: 0px;
+
+		@media (min-width: $x-small) {
+			span {
+				display: block;
+			}
+		}
+	}
+
+	.scroll-down-img {
+		position: absolute;
+		bottom: 90px;
+		cursor: pointer;
+		display: none;
+	}
+
+	.content {
+		padding-bottom: 20px;
+	}
+
+	@media (min-width: $x-small) {
+	}
+
+	@media (min-width: $navbar-collapse) {
+		padding: 0 15px;
+		padding-top: 10%;
+
+		.main-heading {
+			margin-bottom: 35px;
+
+			h1 {
+				margin-bottom: 35px;
+			}
+		}
+		
+		.scroll-down-img {
+			display: inline;
+		}
+	}
+}

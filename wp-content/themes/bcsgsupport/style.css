@@ -1,0 +1,14 @@
+/*
+Theme Name: Basic BCSG Support Centre
+Theme URI: http://bcsg.com/
+Description: A Support Centre theme created to be quickly utilised throughout BCSG projects.
+Author: Matthew Rayner
+Author URI: http://bcsg.com/
+Version: 1.0
+Tags: responsive, bootstrap, support center
+
+This support theme was created using Bootstrap 2 to ensure legacy browser support. Based on the original SilverStripe theme.
+*/
+@import url('bootstrap/css/bootstrap.min.css'); 
+@import url('bootstrap/css/bootstrap-responsive.min.css');
+@import url('support-centre.css');

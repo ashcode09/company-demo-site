@@ -1,0 +1,43 @@
+.planhq {
+	position: relative;
+	background-color: $cornflower;
+	color: $color-on-lightbg-1;
+	@extend .pdg-top-btm-each-module;
+	@extend .show-over-landing-page;
+
+	.left-content {
+		width: 50%;
+		margin: 0px;
+
+		@media (max-width: $x-small) {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	.image {
+		background-size: cover;
+		height: 100%;
+		width: 50%;
+		position: absolute;
+		right: 0px;
+		top: 0;
+
+		@media (max-width: $x-small) {
+			display: none;
+		}
+	}
+
+	.heading {
+		line-height: 1.4;
+		margin-bottom: 35px;
+	}
+
+	.content {
+		margin-bottom: 35px;
+
+		.content-paragraph {
+			margin: 0px;
+		}
+	}
+}

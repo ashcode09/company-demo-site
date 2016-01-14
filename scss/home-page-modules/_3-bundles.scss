@@ -1,0 +1,14 @@
+.bundles {
+	background-color: $white;
+	text-align: center;
+	@extend .pdg-top-btm-each-module;
+	@extend .show-over-landing-page;
+
+	.content {
+		margin-bottom: 30px;
+	}
+
+	.reg-font-weight {
+		font-weight: 400;
+	}
+}

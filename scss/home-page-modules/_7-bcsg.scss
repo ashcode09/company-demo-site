@@ -1,0 +1,15 @@
+.bcsg {
+	background-color: $mariner;
+	color: $color-on-darkbg;
+	text-align: center;
+	@extend .pdg-top-btm-each-module;
+	@extend .show-over-landing-page;
+
+	.heading-underline {
+		background-color: $mineshaft;
+	}
+
+	.content {
+		margin-bottom: 30px;
+	}
+}

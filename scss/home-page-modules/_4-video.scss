@@ -1,0 +1,33 @@
+.video-player {
+	overflow: hidden;
+	@extend .show-over-landing-page;
+
+	video::-webkit-media-controls {
+    display: none !important;
+	}
+
+	@media (min-width: $navbar-collapse) {
+		height: $video-div-height;
+	}
+
+	.play-pause-btns {
+		position: absolute;
+		margin-left: 45%;
+    margin-right: 45%;
+    width: 10%;
+
+    img {
+    	width: 100%;
+    }
+
+    @media (max-width: $x-small) {
+    	width: 20%;
+		}
+	}
+
+	.pause-button {
+		display: none;
+	}
+
+	
+}

@@ -1,0 +1,12 @@
+/*
+Theme Name: AIB-theme
+Description: Theme for the BCSG project My Business Connect
+Author: Chris Jenkins
+Author URI: http://bcsg.com/
+Version: 1.0
+Tags: responsive, bootstrap, support center
+
+This support theme was created using Bootstrap 2 to ensure legacy browser support. Based on the original SilverStripe theme.
+*/
+@import url('vanilla-clone.css');
+@import url('bootstrap-lightbox.min.css');

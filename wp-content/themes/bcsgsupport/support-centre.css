@@ -1,0 +1,129 @@
+/* Navbar/Header Styles */
+.navbar-themed .navbar-inner .nav-collapse ul>li>a { text-shadow: none; }
+.navbar-themed .navbar-inner .nav-collapse ul>li>a:hover { background-color: rgba(255,255,255,0.3); text-decoration: underline; };
+.navbar .btn-navbar { width: 18px; height: 18px; }
+.navbar .btn-navbar .icon-bar { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+.navbar-fixed-top, .navbar-fixed-bottom { position: inherit!important; }
+
+/* Body Container Styles */
+.main-container { margin-top: 20px; }
+
+/* Navigation Tabs Styles */
+.nav-tabs>li>a { font-size: 21px; line-height: 1; border: 1px solid #ddd; padding-left: 30px; padding-right: 30px; margin-right: 10px; }
+
+/* Accordion Styles */
+.accordion-heading { font-size: 21px; font-size: 18px; font-weight: bold; }
+.accordion-heading a:hover { text-decoration: none; }
+.accordion-inner ul { margin-bottom: 0; }
+.accordion-inner ul li { list-style: square; }
+.accordion-inner ul li a { width: 100%; }
+.accordion-inner ul li.active a { font-weight: bold; }
+
+/* Helper Styles */
+.no-left-margin { margin-left: 0!important; }
+
+/* St George help site header responsive */
+#a-service{
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  font-size: 12px;
+}
+#right-header-img{
+  float: right;
+}
+.mobile-show{
+  display: none;
+}
+header{
+  background-color: #fff;
+}
+body{
+  background-color: #fff;
+  padding-right: 0px!important;
+  padding-left: 0px!important;
+}
+.main-content{
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.navbar-themed .navbar-inner {
+  background: #eeeeee;
+  color: #2d373e;
+}
+.navbar-inner{
+  min-height: 1px;
+}
+a:active, a:focus{
+  color: #f2503b !important;
+}
+@media (max-width: 768px) {
+  .accordion-heading a{
+    font-size: 15px;
+  }
+  .accordion-inner{
+    font-size: 12px;
+  }
+  input, textarea, .uneditable-input {
+    width: 150px;
+  }
+  #a-service{
+    font-size: 11px;
+    margin-left: 18px;
+  }
+  .mobile-size{
+    font-size: 24.5px;
+  }
+  .bank-logo{
+    margin-top: -61px;
+  }
+}
+@media (max-width: 767px) {
+  header{
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+    padding-bottom: 7px;
+  }
+  .mobile-hide{
+    display: none;
+  }
+  .mobile-show{
+    display: block;
+    width: 120px;
+  }
+  .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  @media only screen 
+      and (min-device-width : 375px) 
+      and (max-device-width : 667px) 
+      and (orientation : portrait) 
+      and (-webkit-min-device-pixel-ratio : 2)
+  { 
+    .bank-logo{
+      margin-top: -2px;
+    }
+  }
+  .navbar-themed .navbar-inner {
+    background: #3B3B3B!important;
+    color: #fff!important;
+  }
+  .navbar .btn-navbar .icon-bar{
+    background-color: #888;
+  }
+  .navbar-themed .navbar-inner .nav-collapse ul>li>a {
+    color: #fff!important;
+  }
+  .navbar-themed .navbar-inner .nav-collapse ul>li>a:hover {
+    color: #777777!important;
+    text-decoration: none;
+    background-color: #eee!important;
+  }
+}

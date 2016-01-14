@@ -1,0 +1,72 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+/* Variables */
+/* Colours */
+/* Background colours */
+/* Font names, weights and sizes */
+/* Images */
+/* Structure */
+/* Base style */
+.landing-page-image, .landing-page, .navbar-header {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 300;
+}
+body h1 {
+  font-size: 60px;
+  font-weight: 300;
+}
+body h2 {
+  font-size: 48px;
+  font-weight: 300;
+}
+body h3 {
+  font-size: 24px;
+}
+body h4 {
+  font-size: 21px;
+}
+body .small-body-copy {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Mixins */
+/* Modules */
+.landing-page {
+  color: #ffffff;
+  padding-top: 10%;
+  padding-bottom: 25%;
+  text-align: center;
+}
+.landing-page .main-heading {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.landing-page p {
+  margin: 0px;
+}
+
+.navbar-header {
+  color: #ffffff;
+}
+.navbar-header .main-nav,
+.navbar-header .login-nav {
+  margin: 10px;
+}
+.navbar-header .main-nav .nav-options,
+.navbar-header .login-nav .nav-options {
+  padding: 0px 15px;
+}
+
+.intro-toolkit {
+  background-color: #ffffff;
+  height: 1000px;
+}

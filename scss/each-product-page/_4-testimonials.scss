@@ -1,0 +1,51 @@
+.testimonials {
+	background-color: $mariner;
+	color: $color-on-darkbg;
+	text-align: center;
+	@extend .pdg-top-btm-each-module;
+
+	.heading-underline {
+		background-color: $mineshaft;
+	}
+
+	.all-quotes {
+		min-height: 150px;
+		overflow: hidden;
+
+		.quote-box {
+			position: relative;
+			margin-left: 30px;
+			margin-right: 30px;
+
+			.quote {
+				margin: 0;
+				font-weight: $roboto-light-weight;
+			}
+
+			.person {
+				margin-top: 25px;
+			}
+
+			.left-quote {
+				position: absolute;
+				left: -10px;
+				top: 0;
+			}
+
+			.right-quote {
+				position: absolute;
+				right: -10px;
+				bottom: 0;
+			}
+		}
+	}
+
+	.buttons {
+		display: inline-block;
+		@extend .circular-buttons;
+	}
+
+	.active.buttons {
+		background-color: $ebony-clay-opacity;
+	}
+}

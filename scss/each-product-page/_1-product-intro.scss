@@ -1,0 +1,121 @@
+.product-intro {
+	margin-top: 40px;
+	text-align: center;
+
+	.product-intro-1 {
+		color: $color-on-darkbg;
+		position: relative;
+		padding-bottom: 250px;
+		width: 100%;
+		@extend .landing-page-image;
+
+		h1 {
+			padding-top: 100px;
+		}
+
+		h4 {
+			padding-top: 35px;
+		}
+
+		.buttons {
+			padding-left: 15px;
+			padding-right: 15px;
+			width: 100%;
+			position: absolute;
+			bottom: 100px;
+
+			.btn {
+				margin-left: 30px;
+				margin-right: 30px;
+
+				@media (max-width: $x-small) {
+					margin: 0;
+					margin-bottom: 30px;
+				}
+			}
+
+			.btn-on-darkbg {
+				background-color: transparent;
+			}
+
+			@media (max-width: $x-small) {
+				bottom: 60px;
+			}
+		}
+	}
+
+	.product-intro-2 {
+		position: relative;
+		text-align: left;
+		padding-top: 65px;
+
+		p {
+			margin-bottom: 0px;
+		}
+
+		.left-content {
+			padding-bottom: 35px;
+			text-align: center;
+
+			ul {
+				@media (min-width: $small) {
+					text-align: left;
+				}
+				padding: 5px;
+
+				@media (max-width: $small) {
+					list-style-type: none;
+				}
+			}
+
+			.receiptbank-intro {
+				.heading {
+					@media (min-width: $small) {
+						text-align: left;
+
+						.heading-underline {
+							margin-left: 0;
+							margin-right: 0;
+						}
+					}
+				}
+			}
+
+			.pricing {
+				@media (min-width: $small) {
+					text-align: left;
+				}
+				margin-top: 30px; 
+				color: $danube;
+
+				.strike-through {
+					margin-left: 20px
+				}
+			}
+
+			.small-body-copy {
+				@media (min-width: $small) {
+					text-align: left;
+				}
+			}
+		}
+
+		img {
+			position: absolute;
+			bottom: 0;
+			width: 50%;
+			max-width: 100%;
+			height: auto;
+
+			@media (max-width: $small) {
+				position: relative;
+				width: 80%;
+				max-width: 400px;
+			}
+		}
+
+		@media (max-width: $small) {
+			text-align: center;
+		}
+	}
+}

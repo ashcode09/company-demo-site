@@ -1,0 +1,17 @@
+.features {
+	background-color: $whisper;
+	color: $color-on-lightbg-1;
+	text-align: center;
+	min-height: 435px;
+	@extend .show-over-landing-page;
+
+	.feature-boxes {
+		opacity: 0;
+		margin-top: $each-heading-padding-top + 20;
+		margin-bottom: $each-heading-padding-top;
+
+		.heading {
+			margin-top: 35px;
+		}
+	}
+}

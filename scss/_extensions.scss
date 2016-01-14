@@ -1,0 +1,57 @@
+.show-over-landing-page {
+	position: relative;
+	z-index: 10;
+}
+
+.pdg-top-btm-each-module {
+	padding-top: $each-heading-padding-top + 20;
+	padding-bottom: $each-heading-padding-top;
+}
+
+.background-img-cover {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.background-image-details {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	@extend .background-img-cover;
+}
+
+.transitions {
+	-webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.drop-box-shadow {
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.landing-page-image {
+	@extend .background-image-details;
+	width: 100%;
+}
+
+.intro-toolkit-boxes {
+	position: relative;
+	height: $height-toolkit-img;
+	background-repeat: no-repeat;
+	@extend .background-img-cover;
+	@extend .drop-box-shadow;
+}
+
+.circular-buttons {
+	margin-left: 5px;
+	list-style: none;
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
+	background-color: $danube;
+	cursor: pointer;
+}
