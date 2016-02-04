@@ -1,4 +1,4 @@
-﻿<html>
+<html>
   <head>
     <meta charset="utf-8"></meta>
     <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,10 +19,16 @@
         <div class="nav-bar-collapse" id="navBarCollapse">
           <ul class="nav navbar-nav menu-nav col-md-9">
             <li><a href="/" class="nav-options" onclick="closeNavBarAndPullPageBack('#navBarCollapse', 'opened')">Home</a></li>
-            <li><a href="/plan-hq/" class="nav-options">Business Planning</a></li>
-            <li><a href="/receipt-bank/" class="nav-options">Expense Management</a></li>
-            <li><a href="/bonline/" class="nav-options">Website Builder</a></li>
-            <li><a href="/sage/" class="nav-options">Bookkeeping &amp; Payroll</a></li>
+            <?php switch_to_blog(1);
+            $args = array( 'sort_order' => 'asc', 'sort_column'  => 'menu_order', 'hierarchical' => 1, 'exclude' => '', 'include' => '', 'meta_key' => '', 'meta_value' => '', 'authors' => '', 'child_of' => 0, 'parent' => -1, 'exclude_tree' => '', 'number' => '', 'offset' => 0, 'post_type' => 'page', 'post_status' => 'publish' ); 
+            $pages = get_pages($args);
+            if ($pages) {
+              foreach ($pages as $page) { ?>
+            <li><a href="<?php echo get_page_link($page->ID); ?>" class="nav-options"><?php $page = get_post($page->ID); echo $page->post_title; ?></a></li>
+            <?php
+              } // foreach ($pages as $page)
+            } // if ($pages)
+            restore_current_blog(); ?>
           </ul>
           <ul class="nav navbar-nav login-nav col-md-3">
             <li><a href="/help/" class="nav-options">Help</a></li>
