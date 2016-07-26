@@ -6,23 +6,25 @@
         <?php query_posts('&tag="howdoesitworktitle"&cat='.$allproductsid); while (have_posts()) : the_post(); the_content(); endwhile; wp_reset_query();?>
         <div class="heading-underline"></div>
       </h2>
-      <?php query_posts('&tag="howdoesitworkintro"&cat='.$allproductsid); while (have_posts()) : the_post(); the_content(); endwhile; wp_reset_query();?>
+      <?php query_posts('&tag="howdoesitworkmodule"&cat='.$catid); while (have_posts()) : the_post(); if (function_exists('the_content_part')) ?>
+      <div><?php the_content_part(1); ?></div>
     </div>
     <div class="steps row">
       <!--
-      As there are 3 steps being detailed in this section of the product pages and each of their post tags (&tag=) are identical except for the increasing integer (i.e. howdoesitworkstep1, howdoesitworkstep2),
-      we're just looping from 1 to 3 and repeating the structure of each feature in this div row.
+      As there are 3 steps being detailed in this section of the product pages, we're looping through the post with tag 'howdoesitworkmodule' for each of the parts (which are seen on the post in /wp-admin),
+      and repeating this structure for each of the steps. Each step has three parts to it (an image, a heading and a paragraph), hence why we're going up by 3 in each loop.
+      If that changes, so should this!
       -->
-      <?php for ($x = 1; $x <= 3; $x++) { ?>
+      <?php $z=2; for ($x = 1; $x <= 3; $x++) { ?>
       <div class="col-md-4">
-        <?php query_posts('&tag="howdoesitworkimg'.$x.'"&cat='.$catid); while (have_posts()) : the_post(); the_content(); endwhile; wp_reset_query();?>
-        <?php query_posts('&tag="howdoesitworkstep'.$x.'"&cat='.$catid); while (have_posts()) : the_post(); ?>
-        <h3 class="heading"><?php the_title(); ?></h3>
-        <div class="content"><?php the_content(); endwhile; wp_reset_query();?></div>
+        <?php the_content_part($z); ?>
+        <h3 class="heading"><?php the_content_part($z+1); ?></h3>
+        <div class="content"><?php the_content_part($z+2); ?></div>
       </div>
-      <?php } // for ($x = 1; $x <= 3; $x++) ?>
+      <?php $z+=3; } // for ($x = 1; $x <= 3; $x++) ?>
+      <?php endwhile; wp_reset_query();?>
     </div>
-    <a class="btn btn-on-lightbg" href="http://mtdev.mybusinessworks.co.uk/Vanila/">
+    <a class="btn btn-on-lightbg" href="<?php query_posts('&tag=linktosignup&cat='.$allproductsid); while (have_posts()) : the_post(); the_content(); endwhile; wp_reset_query(); ?>">
       <?php if ($catid === get_cat_ID( "Product Plan HQ" )) { 
         query_posts('&tag=subscribebtn&cat='.$catid); while (have_posts()) : the_post(); the_content(); endwhile; wp_reset_query(); 
       } else { 
@@ -31,3 +33,10 @@
     </a>
   </div>
 </div>
+
+
+
+
+
+
+

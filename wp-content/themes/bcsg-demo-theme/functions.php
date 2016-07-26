@@ -351,6 +351,7 @@ function mytheme_customize_css()
     <?php
 }
 add_action( 'wp_head', 'mytheme_customize_css');
+remove_filter( 'the_content', 'wpautop' );
 
 
 function getAllPostsAsSelectArray(){

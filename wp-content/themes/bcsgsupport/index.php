@@ -17,7 +17,9 @@
 					<h2><?php the_title(); ?>
 						<div class="heading-underline"></div>
 					</h2>
-					<?php the_content(); ?>
+					<div>
+						<?php the_content(); ?>
+					</div>
 
 				<?php endwhile; else: ?>
 
