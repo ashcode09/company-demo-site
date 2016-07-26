@@ -9,13 +9,13 @@ At the moment, the current structure of this directory is fairly simple. There's
 
 There are also a few files you'll probably be changing a lot depending on what you need to do. The main ones will be:
 
-- The html/php files => Our pages and modules
+- The html/php files => Our pages and modules within those pages
 	- front-page.php is the home page and all of its modules are contained in the ./wp-content/themes/bcsg-demo-theme/front-page-modules folder
-	- page-product-bonline.php, page-product-plan-hq.php, page-product-receipt-bank.php and page-product-sage.php are all the product page, and all the modules are contained in the ./wp-content/themes/bcsg-demo-theme/product-page-modules folder
+	- page-product-bonline.php, page-product-plan-hq.php, page-product-receipt-bank.php and page-product-sage.php are all the product pages, and all the modules are contained in the ./wp-content/themes/bcsg-demo-theme/product-page-modules folder
 	- header.php, which is the header for each of these pages
 	- footer.php, the footer for each of the pages
-- The javascript files. These are all kept under the ./js/ folder, which compiles to a minified JS file with grunt, ./wp-content/themes/bcsg-demo-theme/js/main.min.js. 
-- The CSS files. These are written in SASS and are all kept in the ./scss folder, which compiles into a minified CSS file ./wp-content/themes/bcsg-demo-theme/vanilla-clone.min.css.
+- The javascript files. These are all kept under the ./js/ folder, which compiles to a minified JS file with grunt, ./wp-content/themes/bcsg-demo-theme/js/main.min.js. This main.min.js file is what is being read, so if you've changed some of the javascript files, you need to make sure you're running grunt to compile your changes.
+- The CSS files. These are written in SASS and are all kept in the ./scss folder, which compiles into a minified CSS file ./wp-content/themes/bcsg-demo-theme/vanilla-clone.min.css. Again, make sure you're running grunt when you make .scss changes!
 
 
 
@@ -39,7 +39,7 @@ You can run Grunt with the command 'grunt'. Grunt will watch for any changes you
 How It Works
 ------------
 
-We can change all the content by logging onto Wordpress and amending the posts. Each post has been placed in one category, either the Home Page or one of the Product Pages, or All Products or Testimonials. They have also been given a tag. This is so our pages know what content to put where (if you look at the files in the front-page-modules folderf for example, you can see the query posts that are detailing which category to look in and )
+We can change all the content by logging onto Wordpress and amending the posts. Each post has been placed in one category, either the 'Home Page' or one of the Product Pages, or 'All Products' or 'Testimonials'. They have also been given a tag. This is so our pages know what content to put where (if you look at the files in the front-page-modules folder for example, you can see the query posts that are detailing which category to look in and which part of the post to show)
 
 
 Each page has been given some php variables - each of those variables is then fed into the local templates, so that we can find the post with the content that's relevant to the page we're viewing (especially useful for the product pages, as they each use the same template but obviously have different content)
@@ -52,13 +52,30 @@ Each page has been given some php variables - each of those variables is then fe
 
 
 
+Editing the PHP Pages
+----------------------
 
-Explain what this means:
+You might need to read up a bit on PHP and how to write loops, declare variables, etc... but here are a few explanations on some of the Wordpress functions that are in the .php files.
+
+What this means:
+
 <?php include(locate_template('front-page-modules/home-page-intro-module.php')); ?>
 
-And explain this little thing:
+<?php include(locate_template('[INSERT FILE ADDRESS AND NAME HERE]')); ?> is pointing to a html template we have written and saved in our code.
+The address in the middle is pointing at the folder where the current page is sat, so if we see the above address in C:\Users\ashleigh.maund\Documents\projects\bcsg-demo-site\wp-content\themes\bcsg-demo-theme\front-page.ftl, then we know it is pointing to C:\Users\ashleigh.maund\Documents\projects\bcsg-demo-site\wp-content\themes\bcsg-demo-theme\front-page-modules/home-page-intro-module.php.
+
+
+And what this means:
+
 <?php query_posts('&tag=keyfeature2&cat='.$catid); while (have_posts()) : the_post(); the_content(); endwhile; wp_reset_query(); ?>
 
+<?php query_posts('[INSERT INFO ABOUT POST HERE]'); while (have_posts()) : the_post(); the_content(); endwhile; wp_reset_query(); ?> will show a specific post by querying information about it; this information can be a 'tag' or a 'cat' (category), or both, and is essentially a database query.
+The 'tag' and 'cat' will be defined in the post itself. In the above example, the $catid variable had already been defined earlier in the page, the '.' concantenates the $catid to the rest of the query that is in the string. So we are looking for all posts with the tag 'keyfeature2' in category $catid (as long as it's a string).
+The query_posts() Wordpress function finds all the posts that match what you've provided, and with the_content(), the content of that post is shown (similarly, if you were to change it for the_title(), you would show the title of that post).
+wp_reset_query() resets the query, which has been added because query_posts() overrides any regular post loops that may come after it, so adding wp_reset_query() after every query_posts() prevents this.
+
+
+Aaaand, what this means:
 
 
 
@@ -66,6 +83,7 @@ And explain this little thing:
 
 
 
+Explain wordpress the_title() and the_content(), within the loop!!!!!
 
 
 
