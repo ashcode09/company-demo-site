@@ -24,7 +24,7 @@
       <?php $z+=3; } // for ($x = 1; $x <= 3; $x++) ?>
       <?php endwhile; wp_reset_query();?>
     </div>
-    <a class="btn btn-on-lightbg" href="http://mtdev.mybusinessworks.co.uk/Vanila/">
+    <a class="btn btn-on-lightbg" href="<?php query_posts('&tag=linktosignup&cat='.$allproductsid); while (have_posts()) : the_post(); the_content(); endwhile; wp_reset_query(); ?>">
       <?php if ($catid === get_cat_ID( "Product Plan HQ" )) { 
         query_posts('&tag=subscribebtn&cat='.$catid); while (have_posts()) : the_post(); the_content(); endwhile; wp_reset_query(); 
       } else { 
@@ -33,3 +33,10 @@
     </a>
   </div>
 </div>
+
+
+
+
+
+
+
