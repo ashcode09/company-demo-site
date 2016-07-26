@@ -23,11 +23,12 @@ $catid = get_cat_ID( $category );
 		<div class="row-fluid">
 			<div id="answers" class="col-md-9 info-content">
         <?php query_posts('cat='.$catid); while (have_posts()) : the_post(); ?>
-					<h2><?php the_title(); ?>
-						<div class="heading-underline"></div>
-					</h2>
-        	<?php the_content(); endwhile; wp_reset_query();
-        ?>
+				<h2><?php the_title(); ?>
+					<div class="heading-underline"></div>
+				</h2>
+      	<div>
+      		<?php the_content(); endwhile; wp_reset_query();?>
+      	</div>
 			</div>
 			<div class="col-md-3 sidebar-container">
 				<?php get_sidebar(); ?>

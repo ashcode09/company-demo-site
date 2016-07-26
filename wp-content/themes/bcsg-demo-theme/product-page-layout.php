@@ -4,5 +4,5 @@
 <?php include(locate_template('product-page-modules/product-how-does-it-work.php')); ?>
 <!-- KEY FEATURES -->
 <?php include(locate_template('product-page-modules/product-key-features.php')); ?>
-<!-- TESTIMONIALS (look at testimonials.php) -->
+<!-- TESTIMONIALS -->
 <?php include(locate_template('product-page-modules/testimonials.php')); ?>
