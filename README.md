@@ -1,7 +1,10 @@
 BCSG Demo Site
 ==============
 
-Last updated 7/1/2016
+To set up locally
+
+
+
 
 STAHHPPPPP!!! Before you change anything you might want to have a read of this - it may hopefully make things easier for you.
 
