@@ -38,11 +38,10 @@ $(window).on("load", function() {
 	toggleHeaderStyle();
 	horizontallyCentreAlignAbsoluteEl('scrollDownImg');
 	adjustHeightOfLandingPage(idOfLandingPageDiv);
-  adjustTopOfToolkitModule();
+	adjustTopOfToolkitModule();
 	verticallyCentreAlignSideBarToViewport();
 	adjustHeightOfElementToFillPage('#navBarCollapse');
 	closeNavBarIfInDeskTopView('#navBarCollapse', 'opened');
 	vidContainerToContainVideo();
 	changeStyleOfSideBar();
 });
-
