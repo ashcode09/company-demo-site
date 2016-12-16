@@ -1,0 +1,251 @@
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+    <link href="css/vanilla-clone.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <script type="text/javascript">
+        var home = true;
+        var help = false;
+    </script>
+
+    <div id="navbarHeader" class="navbar-fixed-top navbar-header small-body-copy">
+        <div id="navbarHeader" class="navbar-fixed-top navbar-header small-body-copy navbar-scrolled-down">
+            <div class="row">
+                <div class="col-md-2 navbar-left">
+                    <a class="navbar-brand brand-img" href="/"><img id="brandImgDarkBg" class="showOnDarkBg" src="img/logo.png" /><img id="brandImgLightBg" class="showOnLightBg" src="img/logo-lightbg.png" style="display: none"/></a>
+                    <a onclick="navbarCollapseToggle('#navBarCollapse', 'opened')" class="menu-btn" id="menuBtn"><img class="showOnDarkBg" src="img/navbar-collapse-icon.png" /><img class="showOnLightBg" src="img/navbar-collapse-icon-grey.png" /></a>
+                </div>
+                <div class="nav-bar-collapse" id="navBarCollapse">
+                    <ul class="nav navbar-nav menu-nav col-md-9">
+                        <li><a href="/" class="nav-options" onclick="closeNavBarAndPullPageBack('#navBarCollapse', 'opened')">Home</a></li>
+                        <li><a href="/page1" class="nav-options">Page Title 1</a></li>
+                        <li><a href="/page2" class="nav-options">Page Title 2</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav login-nav col-md-3">
+                        <li><a href="/help/" class="nav-options">Help</a></li>
+                        <li><a href="/register" class="nav-options">Sign up</a></li>
+                        <li><a href="/register" class="nav-options last-in-nav">Log in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="intro" class="landing-page" style="background: url('img/landing-page-stock-photo.jpg'); background-position: center; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="main-heading">
+                    <h1 class="text-uppercase heading">Heading</h1>
+                    <h4>Mini Heading</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-10 content">
+                    Things
+                </div>
+            </div>
+        </div>
+        <img id="scrollDownImg" onclick="goHere('toolkit', 400)" class="img/scroll-icon.png" />
+    </div>
+
+    <?php query_posts('&tag="toolkitmodule"&cat='.$catid); while (have_posts()) : the_post(); if (function_exists('the_content_part')) ?>
+    <div id="toolkit" class="intro-toolkit">
+        <div id="toolkitBgImage" class="toolkit-bg-image bg-img-parallax" style="background-image: url('img/blue-jagged-bg.jpg')">
+            <div class="container">
+                <h2 class="text-uppercase">
+                    Heading
+                    <div class="heading-underline"></div>
+                </h2>
+                <div class="intro-copy"><?php query_posts('&tag="toolkitmodule"&cat='.$catid); while (have_posts()) : the_post(); if (function_exists('the_content_part')) the_content_part(2); ?></div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3" onmouseover="showHoverBox(this)" onmouseleave="hideHoverBox(this)">
+                        <div class="front-boxes" style="background-image: url(img/planhq-1.jpg)">
+                            <div class="tool-logos"><img class="image" src="img/planhq-logo-1.png"></a></div>
+                        </div>
+                        <div class="hover-boxes" style="background-image: linear-gradient(rgba(34, 44, 52, 0.8), rgba(34, 44, 52, 0.8)), url(img/planhq-1.jpg)">
+                            <h4 class="headings">Heading</h4>
+                            <div class="content">Content wooooooo</div>
+                            <div class="deal text-uppercase">Stuff</div>
+                            <a href="/plan-hq/" class="link">Link</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3" onmouseover="showHoverBox(this)" onmouseleave="hideHoverBox(this)">
+                        <div class="front-boxes" style="background-image: url(img/receipt-bank.jpg)">
+                            <div class="tool-logos"><img class="image" src="img/receipt-bank-logo-1.png"></a></div>
+                        </div>
+                        <div class="hover-boxes" style="background-image: linear-gradient(rgba(34, 44, 52, 0.8), rgba(34, 44, 52, 0.8)), url(img/receipt-bank.jpg)">
+                            <h4 class="headings">Heading</h4>
+                            <div class="content">Content stufffs</div>
+                            <div class="deal text-uppercase">Deal</div>
+                            <a href="/receipt-bank/" class="link">Link</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3" onmouseover="showHoverBox(this)" onmouseleave="hideHoverBox(this)">
+                        <div class="front-boxes" style="background-image: url(img/sage.jpg)">
+                            <div class="tool-logos"><img class="image" src="img/sage-logo-1.png"></a></div>
+                        </div>
+                        <div class="hover-boxes" style="background-image: linear-gradient(rgba(34, 44, 52, 0.8), rgba(34, 44, 52, 0.8)), url(img/sage.jpg)">
+                            <h4 class="headings">Heading</h4>
+                            <div class="content">Content</div>
+                            <div class="deal text-uppercase">Deal</div>
+                            <a href="/sage/" class="link">Link</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3" onmouseover="showHoverBox(this)" onmouseleave="hideHoverBox(this)">
+                        <div class="front-boxes" style="background-image: url(img/be-online.jpg)">
+                            <div class="tool-logos"><img class="image" src="img/bonline-logo-1.png"></a></div>
+                        </div>
+                        <div class="hover-boxes" style="background-image: linear-gradient(rgba(34, 44, 52, 0.8), rgba(34, 44, 52, 0.8)), url(img/be-online.jpg)">
+                            <h4 class="headings">Heading</h4>
+                            <div class="content">Content things</div>
+                            <div class="deal text-uppercase">Deal</div>
+                            <a href="/index.php/bonline/" class="link">Link</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bundles" class="bundles">
+        <div class="container">
+            <h2 class="text-uppercase">
+                Heading
+                <div class="heading-underline"></div>
+            </h2>
+            <h3><span class="reg-font-weight">Mini Heading</h3>
+            <div class="content">Some content here</div>
+            <a href="http://mtdev.mybusinessworks.co.uk/Vanila/ssprovision.do?r1=ytovoFVX3zfruB0XO6iR09Oiuzo=" class="btn btn-on-lightbg">
+                Sign up now
+            </a>
+        </div>
+    </div>
+
+    <div id="video" class="video-player" onclick="togglePlay()">
+        <div class="embed-responsive embed-responsive-16by9">
+            <video id="actualVideo" poster="img/happy-video-screenshot.png" class="video" src="video/happy-video.mp4"></video>
+            <a id="playButton" class="play-pause-btns play-button"><img src="img/play-btn.png" /></a>
+            <a id="pauseButton" class="play-pause-btns pause-button"><img src="img/pause-btn.png" /></a>
+        </div>
+    </div>
+
+    <div id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 feature-boxes">
+                    <img src="img/access-icon.png" />
+                    <h3 class="heading">Feature Heading 1</h3>
+                    Feature Content 1
+                </div>
+                <div class="col-md-3 feature-boxes">
+                    <img src="img/discount-icon.png" />
+                    <h3 class="heading">Feature Heading 2</h3>
+                    Feature Content 2
+                </div>
+                <div class="col-md-3 feature-boxes">
+                    <img src="img/login-icon.png" />
+                    <h3 class="heading">Feature Heading 3</h3>
+                    Feature Content 3
+                </div>
+                <div class="col-md-3 feature-boxes">
+                    <img src="img/support-icon.png" />
+                    <h3 class="heading">Feature Heading 4</h3>
+                    Feature Content 4
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="planhq" class="planhq">
+        <div class="left-content container">
+            <div class="col-md-3"></div>
+            <div class="col-md-8">
+                <h3 class="heading">Heading</h3>
+                <div class="content">
+                    Content here please and thank you!
+                </div>
+                <a href="/plan-hq/" class="links-on-lightbg">Link</a>
+            </div>
+        </div>
+        <div class="image right-content" style="background-image: url('img/planhq.jpg')"></div>
+    </div>
+
+    <div id="bcsg" class="bcsg">
+        <div class="container">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <h2 class="text-uppercase">
+                    Heading
+                    <div class="heading-underline"></div>
+                </h2>
+                <div class="content">Content goes here, yay!</div>
+                <a class="btn btn-on-darkbg" href="http://www.bcsg.com/">Link</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <table class="small-body-copy">
+            <tbody id="sidebarTableBody">
+            <!-- refer to JS file sidebar-buttons.js, this contains function that generates the sidebar buttons on page load and fills in this table -->
+            </tbody>
+        </table>
+    </div>
+
+    <?php
+$allpagesid = get_cat_ID( "All Pages" );
+$contactdetailsid = get_cat_ID( "Contact Details" ); ?>
+    <?php switch_to_blog(1); ?>
+    <?php query_posts('&tag="footermodule"&cat='.$allpagesid); while (have_posts()) : the_post(); if (function_exists('the_content_part')) ?>
+
+    <div id="footer" class="footer small-body-copy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-3 copyright">
+                    Copyright content
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="t-and-cs links-on-darkbg">Terms & conditions</a> |
+                    <a href="#" class="privacy-policy links-on-darkbg">Privacy policy</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 content">
+                    <div class="content-paragraph">Contact us by email on
+                        <a class="links-on-darkbg" href="mailto:contact@email.co">
+                            contact@email.co
+                        </a> or by phone at
+                        <a class="links-on-darkbg" href="tel:01234567890">
+                            01234567890
+                        </a>*
+                    </div>
+                    <div class="content-paragraph">More footer content</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php restore_current_blog(); ?>
+    <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/hammerjs/hammer.min.js"></script>
+    <script type="text/javascript" src="src/main.min.js"></script>
+</body>
+</html>
