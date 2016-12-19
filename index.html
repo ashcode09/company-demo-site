@@ -52,7 +52,6 @@
         <img id="scrollDownImg" onclick="goHere('toolkit', 400)" class="img/scroll-icon.png" />
     </div>
 
-    <?php query_posts('&tag="toolkitmodule"&cat='.$catid); while (have_posts()) : the_post(); if (function_exists('the_content_part')) ?>
     <div id="toolkit" class="intro-toolkit">
         <div id="toolkitBgImage" class="toolkit-bg-image bg-img-parallax" style="background-image: url('img/blue-jagged-bg.jpg')">
             <div class="container">
@@ -60,7 +59,7 @@
                     Heading
                     <div class="heading-underline"></div>
                 </h2>
-                <div class="intro-copy"><?php query_posts('&tag="toolkitmodule"&cat='.$catid); while (have_posts()) : the_post(); if (function_exists('the_content_part')) the_content_part(2); ?></div>
+                <div class="intro-copy">Introdocution copy</div>
                 <div class="row">
                     <div class="col-sm-6 col-md-3" onmouseover="showHoverBox(this)" onmouseleave="hideHoverBox(this)">
                         <div class="front-boxes" style="background-image: url(img/planhq-1.jpg)">
@@ -201,12 +200,6 @@
         </table>
     </div>
 
-    <?php
-$allpagesid = get_cat_ID( "All Pages" );
-$contactdetailsid = get_cat_ID( "Contact Details" ); ?>
-    <?php switch_to_blog(1); ?>
-    <?php query_posts('&tag="footermodule"&cat='.$allpagesid); while (have_posts()) : the_post(); if (function_exists('the_content_part')) ?>
-
     <div id="footer" class="footer small-body-copy">
         <div class="container">
             <div class="row">
@@ -238,7 +231,6 @@ $contactdetailsid = get_cat_ID( "Contact Details" ); ?>
             </div>
         </div>
     </div>
-    <?php restore_current_blog(); ?>
     <script type="text/javascript" src="src/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="src/jquery/jquery-ui.js"></script>
     <script type="text/javascript" src="src/bootstrap/bootstrap.min.js"></script>
