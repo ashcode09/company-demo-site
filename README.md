@@ -9,8 +9,9 @@ Amend README
 To set up locally
 
 
+Amend image to screenshot! ()
 
-![Image](img/HomePage.jpg)
+![Image](img/homepage.png)
 
 
 
