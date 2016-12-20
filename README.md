@@ -1,7 +1,28 @@
 BCSG Demo Site
 ==============
 
+
+Amend README
+
+
+
 To set up locally
+
+
+
+![Image](img/HomePage.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
