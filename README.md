@@ -12,7 +12,7 @@ As it was a Wordpress site, and I finished sooner than the deadline, I decided t
 
 The 'master' branch is hosted on demo.bcsg.com, which this has since become private, and therefore not viewable unless you have a password!
 
-For portfolio purposes, I wanted to host this for free, so have done so on Heroku. Because of this, I've created a separate branch 'local-site' and taken out the PHP and replaced it with hardcoded content so the site is still viewable.
+For portfolio purposes, I wanted to host this for free, so have done so on Heroku at ashleigh-company-demo-site.herokuapp.com. Because of this, I've created a separate branch 'local-site' and taken out the PHP and replaced it with hardcoded content so the site is still viewable.
 
 The design itself includes parallax scrolling effects, clickable navigation buttons that scroll smoothly all over the homepage, a video module that enlarges to play and closes to pause when you click on it, and is responsive.
 
