@@ -1,0 +1,216 @@
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+    <link href="css/vanilla-clone.min.css" rel="stylesheet">
+</head>
+<body>
+
+<script type="text/javascript">
+    var home = false;
+    var help = false;
+</script>
+
+<!-- HEADER -->
+<div id="navbarHeader" class="navbar-fixed-top navbar-header small-body-copy navbar-scrolled-down">
+    <div class="row">
+        <div class="col-md-2 navbar-left">
+            <a class="navbar-brand brand-img" href="/"><img id="brandImgDarkBg" class="showOnDarkBg" src="img/logo.png" /><img id="brandImgLightBg" class="showOnLightBg" src="img/logo-lightbg.png" style="display: none"/></a>
+            <a onclick="navbarCollapseToggle('#navBarCollapse', 'opened')" class="menu-btn" id="menuBtn"><img class="showOnDarkBg" src="img/navbar-collapse-icon.png" /><img class="showOnLightBg" src="img/navbar-collapse-icon-grey.png" /></a>
+        </div>
+        <div class="nav-bar-collapse" id="navBarCollapse">
+            <ul class="nav navbar-nav menu-nav col-md-9">
+                <li><a href="/" class="nav-options" onclick="closeNavBarAndPullPageBack('#navBarCollapse', 'opened')">Home</a></li>
+                <li><a href="/page1" class="nav-options">Page 1</a></li>
+                <li><a href="/page2" class="nav-options">Page 2</a></li>
+                <li><a href="/page3" class="nav-options">Page 3</a></li>
+                <li><a href="/page4" class="nav-options">Page 4</a></li>
+            </ul>
+            <ul class="nav navbar-nav login-nav col-md-3">
+                <li><a href="/help" class="nav-options">Help</a></li>
+                <li><a href="/register" class="nav-options">Sign up</a></li>
+                <li><a href="/register" class="nav-options last-in-nav">Log in</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- INTRO -->
+<div id="productIntro" class="product-intro bg-img-parallax" style="background: url('img/blue-jagged-bg.jpg'); background-position: center;">
+    <div class="product-intro-1" style="background: url('img/product-receipt-bank-bg-image.png'); background-position: center; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <h1>Heading</h1>
+                <h4>Product introduction text</h4>
+            </div>
+        </div>
+        <div>
+            <div class="buttons">
+                <a class="btn btn-on-darkbg" onclick="goHere('howDoesItWork')">
+                    See how it works
+                </a>
+                <a class="btn btn-on-lightbg" href="/registration">
+                    Try it for free
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="product-intro-2 container">
+        <div class="row">
+            <div class="left-content col-lg-6">
+                <div><h2 class="text-uppercase heading">Heading<div class="heading-underline"></div></h2></div>
+                Product introduction copy! Yay for content!
+                <h4 class="pricing">Pricing</h4>
+                <div class="small-body-copy deal">Deal</div>
+            </div>
+            <img src="img/receipt-bank-laptop-stock-img.png" />
+        </div>
+    </div>
+</div>
+<!-- HOW DOES IT WORK -->
+<div id="howDoesItWork" class="how-does-it-work">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-uppercase">
+                How it works
+                <div class="heading-underline"></div>
+            </h2>
+            <div>Content that explains how it works</div>
+        </div>
+        <div class="steps row">
+            <div class="col-md-4">
+                <img src="img/receiptbank-step-1.png" />
+                <h3 class="heading">Step 1</h3>
+                <div class="content">More detail about step 1</div>
+            </div>
+            <div class="col-md-4">
+                <img src="img/receiptbank-step-2.png" />
+                <h3 class="heading">Step 2</h3>
+                <div class="content">More detail about step 2</div>
+            </div>
+            <div class="col-md-4">
+                <img src="img/receiptbank-step-3.png" />
+                <h3 class="heading">Step 3</h3>
+                <div class="content">More detail about step 3</div>
+            </div>
+        </div>
+        <a class="btn btn-on-lightbg" href="/register">
+            Try it for free
+        </a>
+    </div>
+</div>
+<!-- KEY FEATURES -->
+<div id="keyFeatures" class="key-features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/receiptbank-key-feature-1.png" />
+                <h3 class="heading">Key feature 1</h3>
+                <div class="content">More detail about feature</div>
+            </div>
+            <div class="col-md-4">
+                <img src="img/receiptbank-key-feature-2.png" />
+                <h3 class="heading">Key feature 2</h3>
+                <div class="content">More detail about feature</div>
+            </div>
+            <div class="col-md-4">
+                <img src="img/receiptbank-key-feature-3.png" />
+                <h3 class="heading">Key feature 3</h3>
+                <div class="content">More detail about feature</div>
+            </div>
+            <div class="col-md-4">
+                <img src="img/receiptbank-key-feature-4.png" />
+                <h3 class="heading">Key feature 4</h3>
+                <div class="content">More detail about feature</div>
+            </div>
+            <div class="col-md-4">
+                <img src="img/receiptbank-key-feature-5.png" />
+                <h3 class="heading">Key feature 5</h3>
+                <div class="content">More detail about feature</div>
+            </div>
+            <div class="col-md-4">
+                <img src="img/receiptbank-key-feature-6.png" />
+                <h3 class="heading">Key feature 6</h3>
+                <div class="content">More detail about feature</div>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+</div>
+<!-- TESTIMONIALS -->
+<div class="testimonials">
+    <div class="container">
+        <div class="row">
+            <h2 class="text-uppercase">
+                Testimonials
+                <div class="heading-underline"></div>
+            </h2>
+        </div>
+        <div id="allQuotes" class="row all-quotes">
+            <div class="col-md-2"></div>
+            <div id="quote1" class="col-md-8 quote-box">
+                <img class="left-quote" src="img/left-quote.png">
+                <h3 class="quote"><i>Yes, I really like this product</i></h3>
+                <div class="person"><i>Person's name</i></div>
+                <img class="right-quote" src="img/right-quote.png">
+            </div>
+            <div id="quote2" class="col-md-8 quote-box">
+                <img class="left-quote" src="img/left-quote.png">
+                <h3 class="quote"><i>I, too, really like this product</i></h3>
+                <div class="person"><i>Other person's name</i></div>
+                <img class="right-quote" src="img/right-quote.png">
+            </div>
+            <div id="quote3" class="col-md-8 quote-box">
+                <img class="left-quote" src="img/left-quote.png">
+                <h3 class="quote"><i>I like it more than those guys</i></h3>
+                <div class="person"><i>Competitive person's name</i></div>
+                <img class="right-quote" src="img/right-quote.png">
+            </div>
+        </div>
+        <div id="allQuoteButtons">
+            <div id="quoteBtn1" class="buttons" onclick="switchTo('quote1', this)"></div>
+            <div id="quoteBtn2" class="buttons" onclick="switchTo('quote2', this)"></div>
+            <div id="quoteBtn3" class="buttons" onclick="switchTo('quote3', this)"></div>
+        </div>
+    </div>
+</div>
+<!-- FOOTER -->
+<div id="footer" class="footer small-body-copy">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-3 copyright">
+                Copyright content
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="t-and-cs links-on-darkbg">Terms & conditions</a> |
+                <a href="#" class="privacy-policy links-on-darkbg">Privacy policy</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 content">
+                <div class="content-paragraph">Contact us by email on
+                    <a class="links-on-darkbg" href="mailto:contact@email.co">
+                        contact@email.co
+                    </a> or by phone at
+                    <a class="links-on-darkbg" href="tel:01234567890">
+                        01234567890
+                    </a>*
+                </div>
+                <div class="content-paragraph">More footer content</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="src/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="src/jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="src/hammerjs/hammer.min.js"></script>
+<script type="text/javascript" src="src/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="src/main.min.js"></script>
+</body>
+</html>
