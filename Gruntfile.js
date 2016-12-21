@@ -19,7 +19,7 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {
-          'wp-content/themes/bcsg-demo-theme/vanilla-clone.min.css':'scss/style.scss'
+          'css/vanilla-clone.min.css':'scss/style.scss'
         }
       }
     },
@@ -30,25 +30,25 @@ module.exports = function(grunt) {
       },
       dist: {
         src: ['js/variables/*.js', 'js/bcsg-support-help-page/*.js', 'js/navbar-module/*.js', 'js/home-page/*.js', 'js/product-pages/*.js', 'js/*.js','js/on-page-load/*.js'],
-        dest: 'wp-content/themes/bcsg-demo-theme/js/main.js'
+        dest: 'src/main.js'
       }
     },
 
     uglify: {
       dist: {
         files: {
-          'wp-content/themes/bcsg-demo-theme/js/main.min.js': 'wp-content/themes/bcsg-demo-theme/js/main.js'
+          'src/main.min.js': 'src/main.js'
         }
       }
     },
 
     watch: {
       css: {
-        files: '**/*.scss',
+        files: 'scss/**/*.scss',
         tasks: ['sass']
       },
       js: {
-        files: '**/*.js',
+        files: 'js/**/*.js',
         tasks: ['concat', 'uglify']
       }
     }
