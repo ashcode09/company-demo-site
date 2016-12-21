@@ -1,6 +1,10 @@
 Demo Site
 ==============
 
+**NOTE TO FUTURE ASHLEIGH**
+Add extra product pages and help site page, and deleted files that are not used in this version (that were from master branch, i.e. php pages and general Wordpress stuff)
+
+
 Introduction
 ------------
 
@@ -14,7 +18,7 @@ The 'master' branch is hosted on demo.bcsg.com, which this has since become priv
 
 For portfolio purposes, I wanted to host this for free, so have done so on Heroku at ashleigh-company-demo-site.herokuapp.com. Because of this, I've created a separate branch 'local-site' and taken out the PHP and replaced it with hardcoded content so the site is still viewable.
 
-The design itself includes parallax scrolling effects, clickable navigation buttons that scroll smoothly all over the homepage, a video module that enlarges to play and closes to pause when you click on it, and is responsive.
+The design itself includes parallax scrolling effects, clickable navigation buttons that scroll smoothly all over the homepage and also change colour depending on the module that they're in (that took a while to perfect!), a video module that enlarges to play and closes to pause when you click on it, swipe-able testimonials in mobile, a swipe-able mobile navigation bar and is responsive.
 
 This is the first full project I have worked on by myself, and I can see looking back that there is a lot that can be improved, mainly with regards to refactoring and improving general site performance!
 
