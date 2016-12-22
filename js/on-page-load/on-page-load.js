@@ -5,7 +5,7 @@ var initialHeightOfVideoContainer = findOrigHeightOfVideoContainer('video');
 // Telling the browser what to do when page is loaded, when page is scrolled and when browser is resized
 
 $(window).on("load", function() {
-	if (home === true) {
+	if (document.getElementById('sidebarTableBody') != null) {
 		generateSideBarButtons();
 	};
 	adjustHeightOfLandingPage(idOfLandingPageDiv);
@@ -22,9 +22,9 @@ $(window).on("load", function() {
 	$('#allQuotes').children('.quote-box').first().show();
 	$('#allQuoteButtons').children().first().addClass('active');
 	enableSwipingForCollapsedNav();
-	if (help === true) {
-		openCategory($(btnForCurrentCategory)[0], 0);
-	};
+	// if (help === true) {
+	// 	openCategory($(btnForCurrentCategory)[0], 0);
+	// };
 }).scroll(function() {
 	clearAnimationQueue('#sidebar');
 	checkIfUserIsScrolling(userIsScrolling)
