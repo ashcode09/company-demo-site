@@ -2,7 +2,7 @@ Demo Site
 ==============
 
 **NOTE TO FUTURE ASHLEIGH**
-Add extra product pages and help site page, and deleted files that are not used in this version (that were from master branch, i.e. php pages and general Wordpress stuff)
+Add extra product pages and help site page, and deleted files that are not used in this version (that were from 'wordpress-site' branch, i.e. php pages and general Wordpress stuff)
 
 
 Introduction
@@ -12,9 +12,9 @@ For my first professional solo project in around October 2015, I was given a des
 
 It was built using HTML5, JQuery, SASS, and the content was originally intended to be hardcoded.
 
-As it was a Wordpress site, and I finished sooner than the deadline, I decided to utilise the Wordpress PHP functions to instead insert content from Wordpress posts into the correct places on the pages (depending on their tags and categories, thanks to the Content Part plugin!) so that the content was no longer hardcoded, and all you needed to do was a login to change the content; the code for this can be viewed on the 'master' branch.
+As it was a Wordpress site, and I finished sooner than the deadline, I decided to utilise the Wordpress PHP functions to instead insert content from Wordpress posts into the correct places on the pages (depending on their tags and categories, thanks to the Content Part plugin!) so that the content was no longer hardcoded, and all you needed to do was a login to change the content; the code for this can be viewed on the 'wordpress-site' branch.
 
-The 'master' branch is hosted on demo.bcsg.com, which this has since become private, and therefore not viewable unless you have a password!
+The 'wordpress-site' branch is hosted on demo.bcsg.com, which this has since become private, and therefore not viewable unless you have a password!
 
 For portfolio purposes, I wanted to host this for free, so have done so on Heroku at ashleigh-company-demo-site.herokuapp.com. Because of this, I've created a separate branch 'local-site' and taken out the PHP and replaced it with hardcoded content so the site is still viewable.
 

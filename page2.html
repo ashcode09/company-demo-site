@@ -16,8 +16,14 @@
 <div id="navbarHeader" class="navbar-fixed-top navbar-header small-body-copy navbar-scrolled-down">
     <div class="row">
         <div class="col-md-2 navbar-left">
-            <a class="navbar-brand brand-img" href="/"><img id="brandImgDarkBg" class="showOnDarkBg" src="img/logo.png" /><img id="brandImgLightBg" class="showOnLightBg" src="img/logo-lightbg.png" style="display: none"/></a>
-            <a onclick="navbarCollapseToggle('#navBarCollapse', 'opened')" class="menu-btn" id="menuBtn"><img class="showOnDarkBg" src="img/navbar-collapse-icon.png" /><img class="showOnLightBg" src="img/navbar-collapse-icon-grey.png" /></a>
+            <a class="navbar-brand brand-img" href="/">
+                <div id="brandImgDarkBg" class="showOnDarkBg img sprites logo"></div>
+                <div id="brandImgLightBg" class="showOnLightBg img sprites logo-lightbg" style="display: none"></div>
+            </a>
+            <a onclick="navbarCollapseToggle('#navBarCollapse', 'opened')" class="menu-btn" id="menuBtn">
+                <div class="showOnDarkBg" src="img/navbar-collapse-icon.png"></div>
+                <div class="showOnLightBg img sprites navbar-collapse-icon-grey"></div>
+            </a>
         </div>
         <div class="nav-bar-collapse" id="navBarCollapse">
             <ul class="nav navbar-nav menu-nav col-md-9">
@@ -63,7 +69,7 @@
                 <h4 class="pricing">Pricing</h4>
                 <div class="small-body-copy deal">Deal</div>
             </div>
-            <img src="img/receipt-bank-laptop-stock-img.png" />
+            <div class="img sprites receipt-bank-laptop-stock-img"></div>
         </div>
     </div>
 </div>
@@ -79,17 +85,17 @@
         </div>
         <div class="steps row">
             <div class="col-md-4">
-                <img src="img/receiptbank-step-1.png" />
+                <div class="img sprites receiptbank-step-1"></div>
                 <h3 class="heading">Step 1</h3>
                 <div class="content">More detail about step 1</div>
             </div>
             <div class="col-md-4">
-                <img src="img/receiptbank-step-2.png" />
+                <div class="img sprites receiptbank-step-2"></div>
                 <h3 class="heading">Step 2</h3>
                 <div class="content">More detail about step 2</div>
             </div>
             <div class="col-md-4">
-                <img src="img/receiptbank-step-3.png" />
+                <div class="img sprites receiptbank-step-3"></div>
                 <h3 class="heading">Step 3</h3>
                 <div class="content">More detail about step 3</div>
             </div>
@@ -104,32 +110,32 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <img src="img/receiptbank-key-feature-1.png" />
+                <div class="img sprites receiptbank-key-feature-1"></div>
                 <h3 class="heading">Key feature 1</h3>
                 <div class="content">More detail about feature</div>
             </div>
             <div class="col-md-4">
-                <img src="img/receiptbank-key-feature-2.png" />
+                <div class="img sprites receiptbank-key-feature-2"></div>
                 <h3 class="heading">Key feature 2</h3>
                 <div class="content">More detail about feature</div>
             </div>
             <div class="col-md-4">
-                <img src="img/receiptbank-key-feature-3.png" />
+                <div class="img sprites receiptbank-key-feature-3"></div>
                 <h3 class="heading">Key feature 3</h3>
                 <div class="content">More detail about feature</div>
             </div>
             <div class="col-md-4">
-                <img src="img/receiptbank-key-feature-4.png" />
+                <div class="img sprites receiptbank-key-feature-4"></div>
                 <h3 class="heading">Key feature 4</h3>
                 <div class="content">More detail about feature</div>
             </div>
             <div class="col-md-4">
-                <img src="img/receiptbank-key-feature-5.png" />
+                <div class="img sprites receiptbank-key-feature-5"></div>
                 <h3 class="heading">Key feature 5</h3>
                 <div class="content">More detail about feature</div>
             </div>
             <div class="col-md-4">
-                <img src="img/receiptbank-key-feature-6.png" />
+                <div class="img sprites receiptbank-key-feature-6"></div>
                 <h3 class="heading">Key feature 6</h3>
                 <div class="content">More detail about feature</div>
             </div>
@@ -150,22 +156,22 @@
         <div id="allQuotes" class="row all-quotes">
             <div class="col-md-2"></div>
             <div id="quote1" class="col-md-8 quote-box">
-                <img class="left-quote" src="img/left-quote.png">
+                <div class="img sprites left-quote"></div>
                 <h3 class="quote"><i>Yes, I really like this product</i></h3>
                 <div class="person"><i>Person's name</i></div>
-                <img class="right-quote" src="img/right-quote.png">
+                <div class="img sprites right-quote"></div>
             </div>
             <div id="quote2" class="col-md-8 quote-box">
-                <img class="left-quote" src="img/left-quote.png">
+                <div class="img sprites left-quote"></div>
                 <h3 class="quote"><i>I, too, really like this product</i></h3>
                 <div class="person"><i>Other person's name</i></div>
-                <img class="right-quote" src="img/right-quote.png">
+                <div class="img sprites right-quote"></div>
             </div>
             <div id="quote3" class="col-md-8 quote-box">
-                <img class="left-quote" src="img/left-quote.png">
+                <div class="img sprites left-quote"></div>
                 <h3 class="quote"><i>I like it more than those guys</i></h3>
                 <div class="person"><i>Competitive person's name</i></div>
-                <img class="right-quote" src="img/right-quote.png">
+                <div class="img sprites right-quote"></div>
             </div>
         </div>
         <div id="allQuoteButtons">

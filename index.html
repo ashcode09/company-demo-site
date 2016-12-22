@@ -15,8 +15,14 @@
     <div id="navbarHeader" class="navbar-fixed-top navbar-header small-body-copy">
         <div class="row">
             <div class="col-md-2 navbar-left">
-                <a class="navbar-brand brand-img" href="/"><img id="brandImgDarkBg" class="showOnDarkBg" src="img/logo.png" /><img id="brandImgLightBg" class="showOnLightBg" src="img/logo-lightbg.png" style="display: none"/></a>
-                <a onclick="navbarCollapseToggle('#navBarCollapse', 'opened')" class="menu-btn" id="menuBtn"><img class="showOnDarkBg" src="img/navbar-collapse-icon.png" /><img class="showOnLightBg" src="img/navbar-collapse-icon-grey.png" /></a>
+                <a class="navbar-brand brand-img" href="/">
+                    <div id="brandImgDarkBg" class="showOnDarkBg img sprites logo"></div>
+                    <div id="brandImgLightBg" class="showOnLightBg img sprites logo-lightbg" style="display: none"></div>
+                </a>
+                <a onclick="navbarCollapseToggle('#navBarCollapse', 'opened')" class="menu-btn" id="menuBtn">
+                    <div class="showOnDarkBg" src="img/navbar-collapse-icon.png"></div>
+                    <div class="showOnLightBg img sprites navbar-collapse-icon-grey"></div>
+                </a>
             </div>
             <div class="nav-bar-collapse" id="navBarCollapse">
                 <ul class="nav navbar-nav menu-nav col-md-9">
@@ -51,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <img id="scrollDownImg" onclick="goHere('toolkit', 400)" class="img/scroll-icon.png" />
+        <div id="scrollDownImg" onclick="goHere('toolkit', 400)" class="img sprites scroll-icon scroll-down-img"></div>
     </div>
 
     <div id="toolkit" class="intro-toolkit">
@@ -65,7 +71,9 @@
                 <div class="row">
                     <div class="col-sm-6 col-md-3" onmouseover="showHoverBox(this)" onmouseleave="hideHoverBox(this)">
                         <div class="front-boxes" style="background-image: url(img/planhq-1.jpg)">
-                            <div class="tool-logos"><img class="image" src="img/planhq-logo-1.png"></a></div>
+                            <div class="tool-logos">
+                                <div class="image sprites planhq-logo-1"></div>
+                            </div>
                         </div>
                         <div class="hover-boxes" style="background-image: linear-gradient(rgba(34, 44, 52, 0.8), rgba(34, 44, 52, 0.8)), url(img/planhq-1.jpg)">
                             <h4 class="headings">Heading</h4>
@@ -77,7 +85,9 @@
 
                     <div class="col-sm-6 col-md-3" onmouseover="showHoverBox(this)" onmouseleave="hideHoverBox(this)">
                         <div class="front-boxes" style="background-image: url(img/receipt-bank.jpg)">
-                            <div class="tool-logos"><img class="image" src="img/receipt-bank-logo-1.png"></a></div>
+                            <div class="tool-logos">
+                                <div class="image sprites receipt-bank-logo-1"></div>
+                            </div>
                         </div>
                         <div class="hover-boxes" style="background-image: linear-gradient(rgba(34, 44, 52, 0.8), rgba(34, 44, 52, 0.8)), url(img/receipt-bank.jpg)">
                             <h4 class="headings">Heading</h4>
@@ -89,7 +99,9 @@
 
                     <div class="col-sm-6 col-md-3" onmouseover="showHoverBox(this)" onmouseleave="hideHoverBox(this)">
                         <div class="front-boxes" style="background-image: url(img/sage.jpg)">
-                            <div class="tool-logos"><img class="image" src="img/sage-logo-1.png"></a></div>
+                            <div class="tool-logos">
+                                <div class="image sprites sage-logo-1"></div>
+                            </div>
                         </div>
                         <div class="hover-boxes" style="background-image: linear-gradient(rgba(34, 44, 52, 0.8), rgba(34, 44, 52, 0.8)), url(img/sage.jpg)">
                             <h4 class="headings">Heading</h4>
@@ -101,7 +113,7 @@
 
                     <div class="col-sm-6 col-md-3" onmouseover="showHoverBox(this)" onmouseleave="hideHoverBox(this)">
                         <div class="front-boxes" style="background-image: url(img/be-online.jpg)">
-                            <div class="tool-logos"><img class="image" src="img/bonline-logo-1.png"></a></div>
+                            <div class="tool-logos"><div class="image sprites bonline-logo-1"></div></a></div>
                         </div>
                         <div class="hover-boxes" style="background-image: linear-gradient(rgba(34, 44, 52, 0.8), rgba(34, 44, 52, 0.8)), url(img/be-online.jpg)">
                             <h4 class="headings">Heading</h4>
@@ -133,8 +145,8 @@
     <div id="video" class="video-player" onclick="togglePlay()">
         <div class="embed-responsive embed-responsive-16by9">
             <video id="actualVideo" poster="img/happy-video-screenshot.png" class="video" src="video/happy-video.mp4"></video>
-            <a id="playButton" class="play-pause-btns play-button"><img src="img/play-btn.png" /></a>
-            <a id="pauseButton" class="play-pause-btns pause-button"><img src="img/pause-btn.png" /></a>
+            <a id="playButton" class="play-pause-btns play-button"><div class="img sprites play-btn"></div></a>
+            <a id="pauseButton" class="play-pause-btns pause-button"><div class="img sprites pause-btn"></div></a>
         </div>
     </div>
 
@@ -142,22 +154,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 feature-boxes">
-                    <img src="img/access-icon.png" />
+                    <div class="img sprites access-icon"></div>
                     <h3 class="heading">Feature Heading 1</h3>
                     Feature Content 1
                 </div>
                 <div class="col-md-3 feature-boxes">
-                    <img src="img/discount-icon.png" />
+                    <div class="img sprites discount-icon"></div>
                     <h3 class="heading">Feature Heading 2</h3>
                     Feature Content 2
                 </div>
                 <div class="col-md-3 feature-boxes">
-                    <img src="img/login-icon.png" />
+                    <div class="img sprites login-icon"></div>
                     <h3 class="heading">Feature Heading 3</h3>
                     Feature Content 3
                 </div>
                 <div class="col-md-3 feature-boxes">
-                    <img src="img/support-icon.png" />
+                    <div class="img sprites support-icon" ></div>
                     <h3 class="heading">Feature Heading 4</h3>
                     Feature Content 4
                 </div>

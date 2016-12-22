@@ -3,11 +3,11 @@
 	text-align: center;
 	@extend .pdg-top-btm-each-module;
 
-	img {
+	.img {
 		margin: 0 auto;
 		margin-bottom: 40px;
 		max-width: 100%;
-		height: auto;	}
+	}
 
 	.heading {
 		margin-bottom: 15px;
