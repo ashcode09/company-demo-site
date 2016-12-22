@@ -17,7 +17,7 @@
 			t.editor = ed;
 
 			// Register commands
-			contentPartDividerHTML = '<img style="border-top: 1px dashed #888; width: 100%; height: 15px; margin: 10px 0; background-image: url( ' + url + '/public/img/content-part-divider.gif ); background-repeat: no-repeat; background-position: top right;" src="' + url + '/public/img/trans.gif" class="mceContentPartDivider mceItemNoResize" title="Content Part Divider" />';
+			contentPartDividerHTML = '<img style="border-top: 1px dashed #888; width: 100%; height: 15px; margin: 10px 0; background-image: url( ' + url + '/img/content-part-divider.gif ); background-repeat: no-repeat; background-position: top right;" src="' + url + '/img/trans.gif" class="mceContentPartDivider mceItemNoResize" title="Content Part Divider" />';
 			ed.addCommand( 'mceContentParts', function() {
 				ed.execCommand( 'mceInsertContent', false, contentPartDividerHTML );
 			} );
@@ -51,7 +51,7 @@
 
 			var moreHTML, contentPartDividerHTML;
 
-			contentPartDividerHTML = '<img style="border-top: 1px dashed #888; width: 100%; height: 15px; margin: 10px 0; background-image: url( ' + url + '/public/img/content-part-divider.gif ); background-repeat: no-repeat; background-position: top right;" src="' + url + '/public/img/trans.gif" class="mceContentPartDivider mceItemNoResize" title="Content Part Divider" />';
+			contentPartDividerHTML = '<img style="border-top: 1px dashed #888; width: 100%; height: 15px; margin: 10px 0; background-image: url( ' + url + '/img/content-part-divider.gif ); background-repeat: no-repeat; background-position: top right;" src="' + url + '/img/trans.gif" class="mceContentPartDivider mceItemNoResize" title="Content Part Divider" />';
 
 			// Display morebreak instead if img in element path
 			ed.onPostRender.add( function() {
