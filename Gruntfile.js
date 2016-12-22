@@ -19,7 +19,7 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {
-          'css/vanilla-clone.min.css':'scss/style.scss'
+          'public/css/vanilla-clone.min.css':'scss/style.scss'
         }
       }
     },
@@ -30,14 +30,14 @@ module.exports = function(grunt) {
       },
       dist: {
         src: ['js/variables/*.js', 'js/bcsg-support-help-page/*.js', 'js/navbar-module/*.js', 'js/home-page/*.js', 'js/product-pages/*.js', 'js/*.js','js/on-page-load/*.js'],
-        dest: 'src/main.js'
+        dest: 'public/src/main.js'
       }
     },
 
     uglify: {
       dist: {
         files: {
-          'src/main.min.js': 'src/main.js'
+          'public/src/main.min.js': 'public/src/main.js'
         }
       }
     },
