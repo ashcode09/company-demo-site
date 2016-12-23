@@ -1,6 +1,8 @@
 Demo Site
 ==============
 
+[View site on Heroku](https://ashleigh-company-demo-site.herokuapp.com/)
+
 **NOTE TO FUTURE ASHLEIGH**
 Add extra product pages and help site page, and deleted files that are not used in this version (that were from 'wordpress-site' branch, i.e. php pages and general Wordpress stuff)
 
