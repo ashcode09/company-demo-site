@@ -65,4 +65,4 @@ Then go to localhost:5000 in the browser and have a look around.
 Homepage Screenshot
 -------------------
 
-![Image](img/homepage.png)
+![Image](img/homepage-min.png)
