@@ -23,6 +23,16 @@ The design itself includes parallax scrolling effects, clickable navigation butt
 This is the first full project I have worked on by myself, and I can see looking back that there is a lot that can be improved, mainly with regards to refactoring and improving general site performance!
 
 
+Page Site Speed
+---------------
+
+I have managed to optimise the load time for the site so far and using the Google Analytics tool 'PageSpeed Insights' have manged to score 97/100 for mobile and desktop views:
+
+![Image](img/db-page-speed-desktop.png)
+![Image](img/db-page-speed-mobile.png)
+
+[View analysis of page speed in Google Analytics](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fashleigh-company-demo-site.herokuapp.com%2F&tab=mobile)
+
 Set up Locally
 --------------
 
